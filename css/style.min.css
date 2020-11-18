@@ -1,0 +1,3 @@
+*{margin:0;padding:0}.header{background-color:yellow}footer{background-color:green}*{margin:0;padding:0}body{display:grid;grid-template-areas:'header header' 'nav nav' 'article ads' 'footer footer';grid-template-rows:0.5fr 50px 4fr 0.5fr;grid-template-columns:1fr 20%}#header{grid-area:header}#mainNav{grid-area:nav}#mainArticle{grid-area:article}#siteAds{grid-area:ads}#footer{grid-area:footer}h1{background-color:green}
+
+/*# sourceMappingURL=style.min.css.map */
