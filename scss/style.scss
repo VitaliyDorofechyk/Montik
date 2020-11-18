@@ -10,8 +10,9 @@ body {
     'nav nav'
     'article ads'
     'footer footer';
-    grid-template-rows: 0.5fr 50px 4fr 0.5fr;
+    grid-template-rows: 1.5fr 50px 8fr 1.5fr;
     grid-template-columns: 1fr 20%;
+    grid-gap: 5px;
 }
 #header {
     grid-area: header;
@@ -27,9 +28,4 @@ body {
 }
 #footer {
     grid-area: footer;
-}
-
-
-h1 {
-    background-color: green
 }
