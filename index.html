@@ -6,35 +6,84 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>ДРЦ Монтик</title>
     <link rel="stylesheet" href="./css/style.min.css"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather&family=Montserrat:ital@1&family=Roboto:ital,wght@1,500&display=swap" rel="stylesheet">
 </head>
 <body>
     <header id="header">
-        <div class="header__logo">Логотип</div>
-        <div class="header__name">
-            <h1 class="header__name_sait">ДРЦ Монтик</h1>
+        <div class="header_container"> 
+            <div class="header_logo">
+                <img src="data:image/jpeg;base64,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"/>
+            </div>
+            <div class="header_name">
+                <h1 class="header_name_sait">ДРЦ Монтик</h1>
+            </div>
         </div>
     </header>
-    <nav id="mainNav">
-        <ul class="navMenu">
-            <li><a href="#">Главная</a></li>
-            <li><a href="#">О нас</a></li>
-            <li><a href="#">Цены и услуги</a></li>
-            <li><a href="#">Фотогалерея</a></li>
-            <li><a href="#">Контакты</a></li>
-        </ul>
+    <nav id="nav">
+        <div class="nav_container"> 
+            <ul class="nav_container_menu">
+                <li><a href="#">Главная</a></li>
+                <li><a href="#">О нас</a></li>
+                <li><a href="#">Цены и услуги</a></li>
+                <li><a href="#">Фотогалерея</a></li>
+                <li><a href="#">Контакты</a></li>
+            </ul>
+        </div>
     </nav>
-    <article id="mainArticle"> 
-    Article
+    <article id="mainArticle">
+        <div class="mainArticle_container">
+            <div class="mainArticle_slider">
+                <img src="https://family.by/uploads/posts/2015-12/1450440873_montik_1.jpg"/>
+                <img src="https://avatars.mds.yandex.net/get-altay/1868686/2a0000016a457b1bcb89d68e45e667121bef/XXL"/>
+                <img src="https://avatars.mds.yandex.net/get-altay/1871297/2a0000016a4575b07fa978138ae0e9408d53/XXL"/>
+                <img src="https://avatars.mds.yandex.net/get-altay/1784631/2a0000016a457cba715dd4dc780026e4d46d/XXL"/>
+                <img src="https://blizko.by/ckeditor_assets/pictures/39994/content_jjk3zskntmi.jpg"/>
+                <img src="https://blizko.by/ckeditor_assets/pictures/40020/content_66ovlj1xd5s.jpg"/>
+                <img src="https://blizko.by/ckeditor_assets/pictures/39995/content_qzejkrwicwa.jpg"/>
+                <input type="button" value="Назад" class="btnPrev">
+                <input type="button" value="Вперед" class="btnNext">
+            </div> 
+            <div class="mainArticle_text">
+                <div><h2>Детский Развлекательный Центр </br> <strong>"Монтик"</strong></h2></div>
+                <p> Мы ждем именно Вас, у нас в гостях и будем рады подарить радость и веселье Вашим детишкам.</p>
+                    <p> У нас имеется уйма различных забав и развлечений, от детских горок и бассейнов с шариками,
+                    наши самые маленькие посетители просто в восторге от них!!! А также у нас имеются лабиринт, батуты,
+                    пневмо-пушки, в которые порой не прочь пострелять и родители наших малышей, детские игровые автоматы,
+                    воздушный хоккей, игравая приставка <strong>PLAYSTATION!!!</strong> </p>
+                    <p> А если вы устали и решили отдохнуть, наши администраторы с удовольствием сделают молочный коктель 
+                    для Ваших ребятишек и кофе или чай для Вас.  
+                </p>
+                <p> У нас есть бар с прохладительными напитками и возможность заказать пиццу от наших партнеров, а также
+                     много различных вкусняшек на Ваш выбор!</p>
+                <div class="rabota">
+                    <p><strong>Режим работы:</strong></br><strong>Будние дни:</strong> <u>с 12.00 до 21.00 </u></br><strong>Выходные дни:</strong> <u>с 10.00 до 21.00</u></p>
+                </div>
+                <div class="adress">
+                    <p><strong>Наш адрес: </strong></br> г. Минск, ул. Налибокская 1,</br> ст.м. Каменная горка,</br> ТЦ Караван, 2 этаж </br></p>
+                </div>
+               <div class="phone">
+                <p><strong>Телефоны:</strong> </br><u>+375 29 636 59 77,</u> </br><u>+375 17 302 42 61</u></p>
+               </div>
+            </div>
+        </div>
     </article>
     <div id="siteAds">
-        <div class="Ads_news">Место для новостей</div>
-        <div class="Ads_reklama">Место для рекламы</div>
-        <div class="Ads_news">Место для новостей</div>
-        <div class="Ads_reklama">Место для рекламы</div>
-        <div class="Ads_news">Место для новостей</div>
-        <div class="Ads_reklama">Место для рекламы</div>
+        <div class="siteAds_container">
+            <div class="siteAds_news">Место для новостей</div>
+            <div class="siteAds_reklama">Место для рекламы</div>
+            <div class="siteAds_news">Место для новостей</div>
+            <div class="siteAds_reklama">Место для рекламы</div>
+            <div class="siteAds_news">Место для новостей</div>
+            <div class="siteAds_reklama">Место для рекламы</div>
+        </div>
     </div>
-    <footer id="footer">Подвал</footer>
+    <footer id="footer">
+        <div class="footer_container">
+        Подвал
+        </div>
+    </footer>
     <script src="./JS/index.js"></script>
 </body>
 </html>

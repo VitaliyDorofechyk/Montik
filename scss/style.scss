@@ -10,14 +10,16 @@ body {
     'nav nav'
     'article ads'
     'footer footer';
-    grid-template-rows: 1.5fr 50px 8fr 1.5fr;
+    grid-template-rows: 1fr 50px 7fr 1fr;
     grid-template-columns: 1fr 20%;
-    grid-gap: 5px;
+    background-color: rgb(255, 254, 241);
+    font-family: Montserrat, Roboto Merriweather;
+    margin: 0 50px;
 }
 #header {
     grid-area: header;
 }
-#mainNav {
+#nav {
     grid-area: nav;
 }
 #mainArticle {

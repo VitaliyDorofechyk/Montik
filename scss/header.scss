@@ -1,19 +1,28 @@
-* {
-    margin: 0;
-    padding: 0;
-}
+$color: rgb(2, 109, 248) !global;
 #header {
-    background: linear-gradient(aqua,white);
+    background: linear-gradient(rgb(187, 245, 245),rgb(244, 247, 247));
 
 }
-.header__logo {
-    width: 200px;
-    float: left;
-}  
-.header__name {
-    text-align: center
-    
+.header_container {
+    padding: 1%;
 }
-.header__name_sait {
-    font-size: 3em;
+.header_logo {
+    width: 150px;
+    position: absolute;
+    left: 50px;
+    top: 0;
+}  
+.header_logo img {
+    width: 180px;
+    border-radius: 50%;
+}
+.header_name {
+    color:$color;
+    text-align: center;
+
+}
+.header_name_sait {
+    font-size: 4em;
+    font-family: Roboto;
+    text-shadow: 3px 2px rgb(95, 93, 93);
 }
